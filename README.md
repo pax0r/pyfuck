@@ -8,7 +8,7 @@ Run code from the file:
 `bin/bf -f source_file`
 
 Run code from stdin:
-`cat source_file > bin/bf`
+`cat source_file | bin/bf`
 
 # Usage from python
 
