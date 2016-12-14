@@ -1,4 +1,4 @@
-class VirtualMachine(object):
+class Memory(object):
     def __init__(self):
         self._memory = [0]
         self._position = 0

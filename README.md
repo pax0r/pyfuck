@@ -2,13 +2,24 @@
 Brainfuck interpreter written using Python3.
 More on Brainfuck: https://en.wikipedia.org/wiki/Brainfuck
 
-# Usage
+# Usage from bash
 Run code from the file:
 
 `bin/bf -f source_file`
 
 Run code from stdin:
 `cat source_file > bin/bf`
+
+# Usage from python
+
+```python
+from pyfuck import Interpreter
+
+source_code = '++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.'
+
+Interpreter(code=source_code).run()
+```
+
 
 # Implementation notes:
 - Cells can store any int or long number (not only 8-bit chars)
